@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg-main-desktop.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+main{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .front{
+    background-image: url(bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 450px; 
+    height: 250px;
+    padding: 20px 30px;
+}
+main .front .all{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main .front .logo{
+    margin-bottom: 65px;
+}
+main .back{
+    margin-top: 20px;
+    background-image: url(bg-card-back.png);
+    background-repeat: no-repeat;
+    width: 450px; 
+    height: 250px;
+}
+main .back #cvc{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    margin-left: 360px;
+}
+.info{
+    color: white;
+}
+.back{
+   margin-left: 100px;
+}
+main .two input{
+    width: 70%;
+    padding: 10px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+}
+main .two input::placeholder{
+    color: hsl(279, 6%, 55%);
+    font-size: 15px;
+}
+main .two p{
+    font-size: 13px;
+}
+main .two .error1, .error2, .error3, .error4{
+    color: hsl(0, 100%, 66%);
+    margin-bottom: 10px;
+}
+main .two .bottom{
+    display: flex;
+}
+.date-year{
+    margin-top: 17px;
+    margin-left: -20px;
+    width: 20%;
+}
+.date-month{
+    width: 20%;
+}
+.cvc{
+    width: 48%;
+}
+main .two button{
+    width: 70%;
+    padding: 15px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.succes{
+    text-align: center;
+    margin-right: 150px;
+}
+.succes img{
+    margin-bottom: 20px;
+}
+.succes h1{
+    margin-bottom: 20px;
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width:850px) {
+    body{
+        background-image: url(bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 300px;
+        margin-top: 135px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .back{
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+    }
+    .first{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 100px;
+    }
+    .two{
+        margin-top: 50px;
+    }
+    .two form .cardholder-name input{
+        width: 85%;
+        padding: 20px;
+    }
+    .two form .card-number input{
+        width: 85%;
+        padding: 20px 20px 20px 5px;
+    }
+    .two form .cvc input{
+        width: 100%;
+        padding: 20px 20px 20px 5px;
+    }
+    .two form .bottom input{
+        padding: 20px 20px 20px 5px;
+    }
+    .two form button{
+        width: 85%;
+    }
+}

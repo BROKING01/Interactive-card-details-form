@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style12.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="one">
+            <div class="first">
+                <div class="front">
+                    <img src="card-logo.svg" alt="" class="logo">
+                    <div class="info">
+                        <h1 id="card-num">0000 0000 0000 0000</h1>
+                        <div class="all">
+                            <span id="card-name">jane appleseed</span>
+                            <div class="date">
+                                <span id="exp-date-month">00</span>
+                                /
+                                <span id="exp-date-year">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <span id="cvc">000</span>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <form>
+                <div class="cardholder-name">
+                    <p>CARDHOLDER NAME</p>
+                    <input type="text" placeholder="e.g Jane Appleseed" id="name">
+                    <p class="error1 hidden">You need to fill this</p>
+                </div>
+                <div class="card-number">
+                    <p>CARD NUMBER</p>
+                    <input type="text" placeholder="e.g 1234 5678 9123 0000" id="number">
+                    <p class="error2 hidden">Wrong format, numbers only</p>
+                </div>
+                <div class="bottom">
+                    <div class="date-month">
+                        <p>EXP.DATE(MM/YY)</p>
+                        <input type="number" placeholder="MM" id="month">
+                        <p class="error3 hidden">Can't be blank</p>
+                    </div>
+                    <div class="date-year">
+                        <input type="number" placeholder="YY" id="year">
+                        <p class="error3 hidden">Can't be blank</p>
+                    </div>
+                    <div class="cvc">
+                        <p>CVC</p>
+                        <input type="text" id="newcvc" placeholder="e.g 123">
+                        <p class="error4 hidden">Can't be blank</p>
+                    </div>
+                </div>
+                <button class="submit" type="submit">Confirm</button>
+            </form>
+            <div class="succes hidden">
+                <img src="icon-complete.svg" alt="">
+                <h1>THANK YOU!</h1>
+                <p>We've added your card details</p>
+                <button class="fin" type="submit">Continue</button>
+            </div>
+        </div>
+    </main>
+    <script src="main12.js"></script>
+</body>
+</html>
